@@ -464,6 +464,9 @@ div {
             box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
         }
 
+.color1 {
+    background-color: #E8e8d9
+}
 .btn-outline-info {
     color: #17a2b8;
     background-color: transparent;
