@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sunset Hills</title>
+    <style>
+        .fWide {
+            width: 100%;
+           
+        }
+        .shIn{
+            margin-bottom: 10px;
+            
+        }
+    </style>
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo:400,400i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark  static-top">
+        <div class="container">
+            <a class="navbar-brand" href="/Index.html">Sunset Hills</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Solve.html">Solve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Code.html">Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://github.com/hiya2527/SOAF">Git</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://confident-hodgkin-a8e086.netlify.app/">Portfolio</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="col">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="mt-5">Sunset hills</h1>
+                    <p class="lead">Please enter Your numbers</p>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-12 ">
+
+
+                    <div class="row">
+                 <div class="col">   <input id="InputSH1" class="fWide shIn" type="number" placeholder="Enter Number 1" /> </div>
+                 <div class="col">   <input id="InputSH2" class="fWide shIn" type="number" placeholder="Enter Number 2" /> </div>
+                 <div class="col">   <input id="InputSH3" class="fWide shIn" type="number" placeholder="Enter Number 3" /> </div>
+                 <div class="col">   <input id="InputSH4" class="fWide shIn" type="number" placeholder="Enter Number 4" /> </div>
+                 <div class="col">   <input id="InputSH5" class="fWide shIn" type="number" placeholder="Enter Number 5" /> </div>
+                 <div class="col">   <input id="InputSH6" class="fWide shIn" type="number" placeholder="Enter Number 6" /> </div>
+                        </div>                                                                                        
+                </div>
+            </div>
+               
+            
+            <div class="row">
+                <div class="col-12">
+                    <button id="shbtn" class="btn fWide btn-dark">Submit</button>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <p class="h3 text-center" id="shOut"> </p>
+                    </div>
+                </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+
+                    <div class="col-1"> <button class="btn centered btn-danger" onclick="clearTC()">Clear</button> </div>
+                </div>
+            </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+       $("#shbtn").click(
+           function () {
+               let num1 = parseInt(document.getElementById("InputSH1").value);
+               let num2 = parseInt(document.getElementById("InputSH2").value);
+               let num3 = parseInt(document.getElementById("InputSH3").value);
+               let num4 = parseInt(document.getElementById("InputSH4").value);
+               let num5 = parseInt(document.getElementById("InputSH5").value);
+               let num6 = parseInt(document.getElementById("InputSH6").value);
+               let shArr = [num1, num2, num3, num4, num5, num6];
+
+               let outputSH = new Array();
+               let tall = 0;
+               let current = 0;
+
+               for (let loop = 0; loop < 6; loop++) {
+                   current = shArr[loop];
+                   if (current > tall) {
+                       outputSH.push(current);
+                       tall = current;
+                   }
+
+
+               }
+
+               document.getElementById("shOut").innerText = `${outputSH.length} building(s) can see the sunset. These buildings are ${outputSH}`;
+           }
+               )
+        function clearTC() {
+            document.getElementById("InputSH1").value = null;
+            document.getElementById("InputSH1").value = null;
+            document.getElementById("InputSH1").value = null;
+            document.getElementById("InputSH1").value = null;
+            document.getElementById("InputSH1").value = null;
+            document.getElementById("InputSH1").value = null;
+            document.getElementById("shOut").innerText = null;
+        }
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</body>
+
+
+</html>
