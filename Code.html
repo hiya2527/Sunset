@@ -79,30 +79,35 @@
         <div class="row">
             <div class="col-12">
                 <pre>
-                <code class="language-js line-numbers"> $("#Soafbtn").click(
-        function() {
-            let num1 = parseInt(document.getElementById("InputSoaf1").value);
-            let num2 = parseInt(document.getElementById("InputSoaf2").value);
-            let num3 = parseInt(document.getElementById("InputSoaf3").value);
-            let num4 = parseInt(document.getElementById("InputSoaf4").value);
-            let num5 = parseInt(document.getElementById("InputSoaf5").value);
+                    <code class="language-js line-numbers"> $("#shbtn").click(
+function () {
+    let num1 = parseInt(document.getElementById("InputSH1").value);
+    let num2 = parseInt(document.getElementById("InputSH2").value);
+    let num3 = parseInt(document.getElementById("InputSH3").value);
+    let num4 = parseInt(document.getElementById("InputSH4").value);
+    let num5 = parseInt(document.getElementById("InputSH5").value);
+    let num6 = parseInt(document.getElementById("InputSH6").value);
+    let shArr = [num1, num2, num3, num4, num5, num6];
 
-            let soafArr = [num1,num2,num3, num4, num5];
-            let k = parseInt(document.getElementById("InputSoaf").value);
-            for (let loop = 0; loop < soafArr.length; loop++) {
-                let checkNum = k - soafArr[loop];
-                for (let kLoop = loop + 1; kLoop < soafArr.length; kLoop++) {
-                    if (checkNum == soafArr[kLoop]) {
-                        document.getElementById("OutputSoaf").innerHTML += `Sum Found. ${soafArr[loop]} + ${soafArr[kLoop]} = ${k}.   `
-                    }
+    let outputSH = new Array();
+    let tall = 0;
+    let current = 0;
 
-                }
+    for (let loop = 0; loop < 6; loop++) {
+        current = shArr[loop];
+        if (current > tall) {
+            outputSH.push(current);
+            tall = current;
+        }
+
+
+    }
+
+    document.getElementById("shOut").innerText = `${outputSH.length} building(s) can see the sunset. These buildings are ${outputSH}`;
             }
-        } 
-           )
-       
+    )
 
-                </code>
+                    </code>
     </pre>
             </div>
         </div>
